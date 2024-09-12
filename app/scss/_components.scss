@@ -9,15 +9,22 @@
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 10rem;
-  transition: all .2s;
+  color: $colorWhite;
+  font-family: $fontSecondary;
   font-weight: 300;
   font-size: 1.5rem;
-  background-color: transparent;
+  border-radius: 0;
+  background-color: $colorPrimary;
+  padding: 1.8rem 3rem;
+  transition: all .2s;
   // for tag button
   cursor: pointer;
   border: none;
   overflow: hidden;
+
+  &:hover {
+    background-color: $colorPrimaryDark;
+  }
 }
 
 .btn {
@@ -44,12 +51,21 @@
 .title {
   font-family: $fontSecondary;
   font-weight: 400;
+  color: $colorBrownDark;
 
   &--largest {}
 
-  &--large {}
+  &--large {
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+  }
 
-  &--medium {}
+  &--medium {
+    font-size: 1.6rem;
+    color: $colorPrimary;
+    text-transform: uppercase;
+  }
 
   &-small {
     font-size: 1.9rem;
