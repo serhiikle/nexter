@@ -1,0 +1,40 @@
+/*==============================================================================
+================================== BUTTONS ====================================
+==============================================================================*/
+
+.button,
+.button:link,
+.button:visited {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  transition: all .2s;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-color: transparent;
+  // for tag button
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+}
+
+.btn {
+  transition: all .2s ease-in;
+  // for tag button
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &,
+  &:link,
+  &:visited {
+    font-size: inherit;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+
