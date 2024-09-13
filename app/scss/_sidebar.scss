@@ -2,4 +2,24 @@
   background-color: $colorPrimary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+
+  &__menu {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    margin-top: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    span {
+      background-color: $colorWhite;
+      height: 2px;
+      width: 4.5rem;
+    }
+  }
 }
